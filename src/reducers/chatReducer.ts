@@ -17,7 +17,7 @@ export const chatReducer = (state: Messages[], action: ListActions ) => {
         case ('add'):
             return [...state, {
                 id: state.length,
-                text: action.payload.user,
+                text: action.payload.text,
                 user: action.payload.user
             }];
         

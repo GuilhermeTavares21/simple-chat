@@ -6,7 +6,7 @@ export const ChatMessages = () => {
     const userCtx = useUser();
     
     return(
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 flex-wrap">
             {chatCtx?.chat.map(item => (
                 <div
                     key={item.id}

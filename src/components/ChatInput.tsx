@@ -23,6 +23,7 @@ export const ChatInput = ({name}: Props) => {
             placeholder={`${name}, escreva uma mensagem`}
             onChange={e => setTextInput(e.target.value)}
             onKeyUp={handleKeyUpAction}
+            value ={textInput}
         />
     )
 }
